@@ -1,0 +1,7 @@
+.idea/
+.cache/
+.eggs/
+.coverage
+*.egg-info/
+*.pyc
+venv/
