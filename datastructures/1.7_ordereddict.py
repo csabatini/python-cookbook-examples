@@ -10,6 +10,11 @@ regular_dict['grok'] = 4
 for k, v in regular_dict.items():
     print '%s - %d' % (k, v)
 print '-' * 20
+# grok - 4
+# foo - 1
+# bar - 2
+# spam - 3
+# --------------------
 
 ordered_dict = OrderedDict()
 ordered_dict['foo'] = 1
@@ -17,16 +22,10 @@ ordered_dict['bar'] = 2
 ordered_dict['spam'] = 3
 ordered_dict['grok'] = 4
 
-# OrderedDict does, but uses ~2x memory (linked list implementation)
+# OrderedDict does, but is roughly double the size in memory
 for k, v in ordered_dict.items():
     print '%s - %d' % (k, v)
 
-# Printed output:
-# grok - 4
-# foo - 1
-# bar - 2
-# spam - 3
-# --------------------
 # foo - 1
 # bar - 2
 # spam - 3

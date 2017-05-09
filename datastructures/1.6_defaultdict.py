@@ -9,3 +9,4 @@ d['cities'].append('Tulsa')
 d['cities'].append('Dallas')
 
 print json.dumps(d)
+# {"states": ["OK", "TX"], "cities": ["Tulsa", "Dallas"]}
